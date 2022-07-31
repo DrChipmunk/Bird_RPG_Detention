@@ -1,0 +1,12 @@
+Setting: talk_bg_bar_ext.png
+L: Hawk Finch Peacock
+R: Swan
+Swan: Here’s their hideout. Be discreet, or else the bouncer will kick you out.
+Hawk: Wow! I’m so parched! Good thing there is this bar, full of good guys, for me to drink clean, clean water!
+Swan: Not like that! We’ll be splitting into two groups. Two of you will sneak in through the back door to get to the safe, up the first stairs to the right. It’s where the bones are likely stashed.
+Finch: You sure know much about this place.
+Swan: I have my ways. Anyways, the other comes with me, through the front, to distract the people inside. The bouncer in front is a childhood acquaintance, and he’s always been overprotective when I try to bring friends over.
+Swan: But, if one of you were something else to me, he might get less offended.
+Peacock: You want one of us to pretend you’re our boyfriend.
+Swan: I was thinking group project partner, but that works even better. Who’s coming with me?
+# TODO: decision time

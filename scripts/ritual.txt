@@ -1,0 +1,19 @@
+Location: talk_bg_museum_int.txt
+R: Pheasant
+Pheasant: *ritual incantation*
+L: Peacock Finch Hawk
+Pheasant: Oh, didn’t see you there, kids. I wasn’t expecting you.
+Peacock: My friends are here for their reward money. By the way, what’s the-
+Pheasant: Yes, of course, I promised you money. Why don’t you run along with your reward and forget you ever saw anything with this check for…ten dollars?  
+Hawk: That’s like, thirty bananas!
+Finch: You promised us $100!
+Mr. Pheasant: Very astute memory. Indeed, I did promise that much. Since you kids did so well and are so intelligent, how about I raise the reward to a check for…a gazillion trillion dollars?
+Peacock: I wouldn’t have to worry about college fees anymore…
+L: Peacock Swan Hawk
+Swan: You’re not fooling us…me one bit. What are you planning?
+Pheasant: I could tell you, but what use would that knowledge be to a bunch of corpses?
+Peacock: How could you!
+Hawk: Corpses! Where?
+Pheasant: It’s a threat. The corpses are supposed to be you. Because they’re going to be you. Because I’m going to kill you. I’ll do this by hurting you until you die. Understand?
+Hawk: ...
+Pheasant: ...

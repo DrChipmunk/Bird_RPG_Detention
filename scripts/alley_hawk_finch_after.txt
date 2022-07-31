@@ -1,0 +1,5 @@
+Location: talk_bg_alley.png
+L: Hawk
+R: Finch
+Finch: I wonder how Peacock and Swan are doing?
+Hawk: They’re fine, bro. Let’s bust in!

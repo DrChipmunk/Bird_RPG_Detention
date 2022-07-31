@@ -1,0 +1,23 @@
+Location: talk_bg_street.png
+L: Hawk
+R: Ground_Dove Rock_Pigeon Jacobin
+Ground_Dove: Oooghh
+Rock_Pigeon: Aghhh
+Jacobin: Coo...
+Hawk: If you ever go near my bros, I’ll give you another beating!
+L: Finch
+Finch: Tell ‘em, girlfriend! Great job showing them who’s boss.
+L: Peacock
+Peacock: I’m proud of you, Hawk. Let’s take them to Blueja-
+L: Bluejay
+Bluejay: What’s this hullabaloo? What did you four do this time?
+L: Bluejay Swan
+Swan: They tried selling us ‘candy’. We captured them. You’re welcome. Goodbye.
+L: Bluejay
+Bluejay: Alright, criminals, you’re coming with me.
+Rock_Pigeon: What do you think about that, boss?
+Jacobin: Coo.
+R: Ground_Dove Rock_Pigeon
+Ground_Dove: He says ‘no’.
+R: 
+Bluejay: …

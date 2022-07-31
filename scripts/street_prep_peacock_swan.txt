@@ -1,0 +1,18 @@
+Location: talk_bg_street.png
+L: Swan
+R: Peacock
+Swan:...And that’s the story, got it?
+Peacock: This is too much pressure! I know I’m going to mess up somewhere.
+Swan: You memorized the entire script in one go. You’ll be fine. 
+Peacock: Memorization is only the simplest variable. How will I act like I’m in love? Would that be enough for his approval? And what do we do if he won’t let me in?
+Swan: If your acting’s not enough, then I’ll cover for you. If he doesn’t approve, I’ll leverage our friendship. And if he wants to fight, we win. Simple. 
+Peacock: Not simple at all! There are a hundred other ways this farce could fall apart. I think we should run over-
+Swan: Enough. More worrying will only paralyze you. 
+Peacock: How can you just jump in?
+Swan: ...I used to be a really timid kid. So my mom pushed me to do things I thought I wasn’t ready for. I hated it, but every experience, good or bad, made me stronger. 
+Peacock: That was supposed to be my internship. But I just embarrassed myself in front of my coworkers and got stuck with coffee runs.
+Swan: Mr. Pheasant is a wet sandbox. This time will be different because we’ll be working together. 
+Peacock: Thanks, Swan. I’ve always had a difficult time talking to new people, and I’ve never had to act before. I’ll really be counting on you to make it convincing. 
+Swan: Honestly, it’s blind leading blind here. 
+Peacock: Ha! Somehow, hearing that doesn’t make me as panicked as I should be. 
+Swan: We’ve kept them waiting for long enough. Let’s go. 

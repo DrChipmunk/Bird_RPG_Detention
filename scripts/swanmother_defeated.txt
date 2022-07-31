@@ -1,0 +1,25 @@
+Location: talk_bg_bar_int.png
+L: Swan
+R: White_Swan
+White_Swan: ...So be it. It was always a matter of time until you surpassed me. What will you do with this victory?
+Swan: I didn’t fight for a victory. I didn’t even want to fight at all. You’re just jumping to conclusions because you thought I’d end up like you.
+White_Swan: I’m sorry. I shouldn’t have let history cloud my judgement. Still, your growth is a milestone worth celebrating. Any request, within reason, I’ll do for you. 
+Swan: I...want out. I never liked the family business, and I don’t want to inherit it. I’m sorry I never told you until now. 
+White_Swan: Can’t say this turn of events surprised me anyway. We all do what we need to for the ones we love.
+R: White_Swan Duck
+Duck: *sob *
+Swan: Thank you. I promise I’ll make you proud.
+R: White_Swan Goose
+Goose: Hold it, Black! I’d believe you a little easier if you hadn’t tried to steal the bones through the back.
+L: Swan Peacock
+Peacock: Mr. Pheasant had tasked us with retrieving the fossils, and we’d tracked them all the way here. With all due respect, ma’am, we’re not leaving without them. 
+R: White_Swan
+White_Swan: These bones were going to fetch a good price, but if people know, then the point’s moot. When you return them to Mr. Pheasant, tell him you found it in the trash.
+L: Swan Finch
+Finch: But that’s just-
+Swan: The bones were found in the trash. And that’s the truth if you know what’s good for you.
+Finch: Yeesh! You could just, like, admit you don’t want Mommy to get in trouble.
+White_Swan: Black, are you and your friends staying for dinner?
+Swan: Is crème brulee for dessert?
+White_Swan: Did you finish your homework?
+Swan: Goodbye, Mom.

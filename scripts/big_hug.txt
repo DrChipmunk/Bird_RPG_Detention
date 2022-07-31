@@ -1,0 +1,16 @@
+Location: talk_bg_street.png
+L: Swan Hawk
+R: Peacock Finch
+Hawk: Dang. Dinner sounded nice even if they were the mafia.
+Finch: Would’ve been nicer if Swan warned us that he was mafia too.
+Swan: …I’m sorry. I know I should’ve, but today was the first time I’ve ever been able to just relax with friends like this. I thought that if you knew, you’d leave too.
+Hawk: No problem! After all we’ve been through, you’ll always be my bro.
+Finch: I’m not blaming you for wanting to hide, sweetie. We’re just glad you’re being honest now. 
+Swan: I’d been thinking about going clean for a while, but I’d never been able to broach the topic with my mom until today. Honestly, it’s a little dizzying. 
+Peacock: It might be tough to decide when you’ve suddenly got a lot of options. Do you know what you want to do?
+Swan: I’m stuck between baking or witchcraft. 
+Peacock: One of them’s not a career.
+Swan: I’m serious. Goose has been teaching me how to make proper banana bread. I’ve never had anyone else taste test it before, so I could bring some to school tomorrow. If you want.
+Hawk: *sniff * We love you. *sniff * Bro hug, everyone!
+# hug animation
+Swan: Get off me!

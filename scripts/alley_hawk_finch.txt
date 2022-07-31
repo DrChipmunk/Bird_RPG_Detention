@@ -1,0 +1,29 @@
+Location: talk_bg_alley.png
+L: Hawk
+R: Finch
+Hawk: ...You know, I never got to thank you for saving me from those pigeons during detention.
+Finch: Oh puh-lease, don’t thank me for that! You’re the last person who needs saving.
+Hawk: But you did! If I had stayed in detention, the pigeons would’ve talked me into Quick. I was having trouble saying no. Didn’t know if I’d make the team without it.
+Finch: Gurl, are you kidding? You could, like, solo the team. 
+Hawk: My gains came from the mission! Without you guys, I-
+Finch: You’ll never need Quick! Maybe you wouldn’t have made tryouts without it this year, but you’d be so much stronger next year without it. Look at what it did to the pigeons!
+Hawk: ...You’re right. I’m strong! I’m stronger than Quick! I’m ready to ace tryouts!
+Finch: That’s the attitude I wanna hear! You’ll hear me cheering louder than anyone else tomorrow.
+Hawk: But you’re trying out too, right?
+Finch: Would I be allowed to join a girl’s team? The others might think I have an unfair advantage.
+Hawk: Bro, the team’s all tough girls! You’d be a fellow peanut butter in our peanut butter jar. It wouldn’t feel right without you.
+Finch: Thanks. Honestly, I’ve missed sharing a hobby with a clique. Maybe joining the team is what I need. Looking forward to doing track with you...bro.
+Hawk: *sniff* Bro…
+L: Finch Hawk
+R: Goose
+Goose: What the-shoo! If you keep snooping I’ll start shooting! 
+Finch: Excuse me, are you interrupting girl talk?
+Goose: Oh, sorry. 
+Goose: I mean, you’re not fooling me! You’ve poked your beaks into my nest for the last time.
+Finch: Like, do I know you?
+Hawk: Don’t think so, bro. Never seen him before.
+Goose: You...don’t recognize me? From that fight with Magpie and Bluejay?
+Hawk: That was a shorter bird, dude.
+Finch: Wait. If he was defending Magpie, he totally has the bones!
+Hawk: How does your brain lift so much? We’re getting the bones back!
+Goose: You got it easy around Bluejay, but I won’t show any mercy now.

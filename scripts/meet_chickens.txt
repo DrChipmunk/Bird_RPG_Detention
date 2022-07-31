@@ -1,0 +1,42 @@
+Location: talk_bg_museum_ext_night.png
+L: Peacock
+R: Quail Pheasant
+Quail: Welcome back! Did you retrieve the fossils?
+Peacock: Yes, we just found it mysteriously lying around in the garbage. 
+Pheasant: Good job everyone, you saved the museum!
+# need sunset background
+N: And they all lived happily ever after
+L:
+R:
+Hawk: Woohoo, feels good to save the day!
+Finch: And it feels like, like, we all grew up too.
+Peacock: Except me, but that’s to be expected.
+Swan: Wait a minute…
+# setting snaps back
+L: Swan
+Swan: Where’s our reward? We never got the promised $100.
+L: Swan Hawk
+Hawk: Bro, aren’t you satisfied with the warm feeling in your heart after doing the right thing?
+Swan: I want money.
+L: Swan Peacock
+Peacock: And Mr. Pheasant might let me help out more after today! Maybe I can start writing articles, or cleaning artifacts. If he’s really happy, I could even lead tours inside!
+L: Finch Peacock
+Finch: You need, like, way higher standards.
+R: Quail
+Quail: Oh, Peacock! What are you doing here? The museum’s hours are long over.
+Peacock: Maybe we shouldn’t bother them. I mean, we could always get the money tomorrow.
+L: Swan Peacock
+Swan: Hold your ground. For the money.
+Peacock: Okay. We’re here to talk to Mr. Pheasant. Could you let us in?
+Quail: I already locked up the museum. And besides, the girls and I are going for board game night after he let us leave early.
+R: Quail Chickens
+Peacock: I love board games! May I join?
+Quail: No.
+L: Finch Peacock
+Finch: Oh snap, P. You can’t just take that lying down.
+L: Peacock
+Peacock: *Holds cup* ...Are you still looking for that strawberry vanilla chai decaf latte with fat free almond milk and two hazelnut shots?
+Quail: Yes! Thank you very much, Peacock. You’ve always been family to us, you know?
+Peacock: *flips drink* Oops. *Spills on Ms. Quail* Hope I didn’t ruin your feather paint. I know how much you need Mr. Pheasant to see you as a clown.
+Quail: How…
+Quail: *turns red* …DARE YOU!
