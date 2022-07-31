@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/kiss_effect-002.wav-7521f082c27d0989bb24e585a54e52fe.sample"
+
+[deps]
+
+source_file="res://sounds/kiss_effect-002.wav"
+dest_files=[ "res://.import/kiss_effect-002.wav-7521f082c27d0989bb24e585a54e52fe.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

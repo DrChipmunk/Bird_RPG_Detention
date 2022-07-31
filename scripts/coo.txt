@@ -1,0 +1,32 @@
+Location: Detention.png
+# background: street
+L: Hawk Swan Peacock
+R: Finch
+Finch: Hey guys, wait up!
+Swan: Took you long enough.
+Finch: So you’re not like, weirded out?  After the whole thing with PEEP?
+Hawk: Was being part of a boyband so awful?
+Peacock: Be sensitive! No one wants to remember their boyband days. 
+Finch: It’s fine. You know what, Hawk? I thought you called me ‘bro’ just to be rude, but now I know that’s how you call your friends. So, you can call me ‘bro’ too, if you want.
+Hawk: *tearing up* I’m honored, bro...
+Swan: How touching. Now do you all actually want to know who stole the dinosaur bones?
+Peacock: How do you know? PEEP gave us such a barebones description. 
+Swan: Don’t be naive. Bowler hats are a trademark of only one group. The mafia.
+Peacock: This is much more trouble than I’m being unpaid for. Bluejay should-
+???: Hey hey hey friend, maybe the police don’t gotta be here quite yet.
+Hawk: Hide me!
+L: Finch
+R: Rock_Pigeon Ground_Dove
+Rock_Pigeon: Good to see you, buddy. You owe us $300.
+Ground_Dove: Just a lil’ interest after the fight.
+Finch: Back off, creeps! She doesn’t want your candy.
+Rock_Pigeon: Hey now, missy, don’t speak for the customer here.
+Ground_Dove: Come on, it’s a tight deal for what Quick can do.
+L: Hawk
+Hawk: No! I don’t want your Quick! Me and my bros are stronger than anything your candy can do.
+Rock_Pigeon: Too good for Quick? What do you think about that, Boss Jacobin?
+L: Rock_Pigeon Ground_Dove Jacobin
+Jacobin: …
+Jacobin: Coo.
+Ground_Dove: You tell ‘em, Boss. Can’t have bad talk about Quick spreadin’ ‘round. Especially when the track team’s making places.
+Hawk: Stay away from my team! Come on, dudes, let’s teach them a lesson!

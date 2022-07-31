@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/smoke_fade-003.wav-99c011dffdd4b8a0d8a307152dd496c8.sample"
+
+[deps]
+
+source_file="res://sounds/smoke_fade-003.wav"
+dest_files=[ "res://.import/smoke_fade-003.wav-99c011dffdd4b8a0d8a307152dd496c8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

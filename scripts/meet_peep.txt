@@ -1,0 +1,26 @@
+Location: Detention.png
+# background: concert
+L: Hawk
+R: Sparrow
+Sparrow: Grrr…you’ll...pay.... *thud*
+R: 
+Hawk: Woah, these fans are nuts!
+R: Robin
+Robin: Now now, don’t be so hard on my passionate fans.
+L: Finch Hawk
+Finch: Oh, shut up Robin.
+Robin: I expected you to, like, buy our tickets and get drunk in the back, not start fights with your former fans. 
+Finch: I don’t know what you’re talking about. I have nothing to do with you!
+L: Finch Swan
+Swan: You yelled out your entire backstory already.
+L: Finch Swan Peacock
+Peacock: Your feather clips are just their sunglasses split into half. 
+Finch: *sweats* So what if PEEP sold me out. They have the bones, and we’re taking them back.
+L: Finch Peacock
+Peacock: Actually, about the bones-
+Robin: The T-Rex skeleton is the star of the show! If you want it, you’ll have to put on a bigger performance tonight.
+L: Finch Hawk
+Hawk: I’ve always wanted to sing on-stage!
+Robin: Let’s, like, make it more even. A band-battle. Your misfit crew can try to stitch itself together.
+Finch: My friends may be different, but we can all kick your botox’ed butt!
+Robin: Hah! No one can beat PEEP’s impenetrable defense!

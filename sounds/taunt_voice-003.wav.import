@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/taunt_voice-003.wav-15d1edbcae4f0837e4fbec2813a78a19.sample"
+
+[deps]
+
+source_file="res://sounds/taunt_voice-003.wav"
+dest_files=[ "res://.import/taunt_voice-003.wav-15d1edbcae4f0837e4fbec2813a78a19.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/fangirl_1_idle.png" type="Texture" id=1]
+[ext_resource path="res://scenes/Particles/Particle_Fangirl.gd" type="Script" id=2]
+
+[node name="Particle_Fangirl" type="Sprite"]
+scale = Vector2( -1, 1 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )

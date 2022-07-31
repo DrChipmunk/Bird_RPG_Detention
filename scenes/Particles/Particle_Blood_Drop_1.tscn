@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/Particles/Particle_Blood_Drop_1.gd" type="Script" id=1]
+[ext_resource path="res://sprites/blood_drop.png" type="Texture" id=2]
+
+[node name="Blood_Drop_1_Particle" type="Sprite"]
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

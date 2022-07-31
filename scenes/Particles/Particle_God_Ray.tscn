@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Particle_God_Ray.gd" type="Script" id=1]
+
+[node name="Particle_God_Ray" type="Node2D"]
+modulate = Color( 1, 1, 1, 0.564706 )
+script = ExtResource( 1 )

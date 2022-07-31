@@ -1,0 +1,30 @@
+Location: Detention.png
+# background: concert
+L: Finch
+R: Robin Peep
+Finch: Alright losers, give back the fossils you stole.
+Robin: We never stole any fossils. These bones were bought online.
+Finch: But…the T-Rex….and the event last night.
+L: Finch Peacock
+Peacock: I tried to tell you, but they’re fake. Made of plastic. That T-Rex has too many ribs to be a real skeleton. 
+Finch: Speak up before I embarrass myself next time!
+Robin: What’s this about stolen bones?
+L: Finch Hawk
+Hawk: Magpie stole some dinosaur bones, and now we’re on the chase! She said she gave ‘em to someone last night at the track field.
+Peep: We didn’t, like, see any magpie. 
+Peep: But there was that one fan, who was like “OMG You have dinosaur bones? So do I. This must be destiny!”
+Peep: Tried really hard to make it a thing.
+L: Peacock Hawk
+Peacock: That could be our lead! Can you tell us more about this fan? Any identifying features?
+Peep: …
+Peep: ...
+Peep: He had a bowler hat?
+Peacock: Oh come on, that’s-
+L: Peacock Hawk Swan
+Swan: -all we needed to know.
+Swan: Let’s leave. At least party-crashing wasn’t a complete waste of time.
+L: Finch
+R: Robin
+Robin: You know, Goldfinch, you haven’t lost your stage presence one bit. We’d, like, love to have you back in the band.
+Robin: But you know, since it’s a boy-band-
+Finch: Screw you. I’m leaving with my actual friends.

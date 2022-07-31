@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cringe_card-005.wav-613e53cae696e5ff8a6f5c9cde45d077.sample"
+
+[deps]
+
+source_file="res://sounds/cringe_card-005.wav"
+dest_files=[ "res://.import/cringe_card-005.wav-613e53cae696e5ff8a6f5c9cde45d077.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

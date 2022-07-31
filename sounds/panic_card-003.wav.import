@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/panic_card-003.wav-aa2bdb15570188df9f7239b5a63f6819.sample"
+
+[deps]
+
+source_file="res://sounds/panic_card-003.wav"
+dest_files=[ "res://.import/panic_card-003.wav-aa2bdb15570188df9f7239b5a63f6819.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

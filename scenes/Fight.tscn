@@ -1,0 +1,1474 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://Fight.gd" type="Script" id=1]
+[ext_resource path="res://sprites/swan_idle.png" type="Texture" id=2]
+[ext_resource path="res://sprites/peacock_plate.png" type="Texture" id=3]
+[ext_resource path="res://sprites/options_button.png" type="Texture" id=4]
+[ext_resource path="res://sprites/finch_plate.png" type="Texture" id=5]
+[ext_resource path="res://sprites/peacock_idle.png" type="Texture" id=6]
+[ext_resource path="res://sprites/card_tray.png" type="Texture" id=7]
+[ext_resource path="res://sprites/hawk_plate.png" type="Texture" id=8]
+[ext_resource path="res://sprites/swan_plate.png" type="Texture" id=9]
+[ext_resource path="res://sprites/enemy_plate.png" type="Texture" id=10]
+[ext_resource path="res://sprites/hawk_idle.png" type="Texture" id=11]
+[ext_resource path="res://sprites/finch_idle_new.png" type="Texture" id=12]
+[ext_resource path="res://sprites/perfect_birb_idle.png" type="Texture" id=13]
+[ext_resource path="res://sprites/discard_icon.png" type="Texture" id=14]
+[ext_resource path="res://sprites/background_alleyway_v2.png" type="Texture" id=15]
+[ext_resource path="res://sprites/end_turn.png" type="Texture" id=16]
+[ext_resource path="res://sprites/hawk_orb.png" type="Texture" id=17]
+[ext_resource path="res://sprites/deck_icon.png" type="Texture" id=18]
+[ext_resource path="res://sprites/peacock_orb.png" type="Texture" id=19]
+[ext_resource path="res://sprites/swan_orb.png" type="Texture" id=20]
+[ext_resource path="res://sprites/finch_orb.png" type="Texture" id=21]
+[ext_resource path="res://scenes/Enemy_Plate.gd" type="Script" id=22]
+[ext_resource path="res://scenes/Birb.gd" type="Script" id=23]
+[ext_resource path="res://scenes/Card_Tray.gd" type="Script" id=24]
+[ext_resource path="res://scenes/Birb_Plate.gd" type="Script" id=25]
+[ext_resource path="res://scenes/Enemy.gd" type="Script" id=26]
+[ext_resource path="res://sprites/tooltip_effect.png" type="Texture" id=27]
+[ext_resource path="res://fonts/times.ttf" type="DynamicFontData" id=28]
+[ext_resource path="res://scenes/HP_bar.gd" type="Script" id=29]
+[ext_resource path="res://scenes/Sound_Effect_Player.gd" type="Script" id=30]
+[ext_resource path="res://sprites/effect_kissed.png" type="Texture" id=31]
+[ext_resource path="res://sprites/intent_hawk_damage.png" type="Texture" id=32]
+[ext_resource path="res://sprites/effect_frozen.png" type="Texture" id=33]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 28 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 28 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 28 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 15
+extra_spacing_bottom = -7
+font_data = ExtResource( 28 )
+
+[node name="Fight" type="Node2D"]
+pause_mode = 1
+script = ExtResource( 1 )
+
+[node name="Background" type="Sprite" parent="."]
+z_index = -4
+texture = ExtResource( 15 )
+centered = false
+
+[node name="Card_Tray" type="Sprite" parent="."]
+texture = ExtResource( 7 )
+centered = false
+offset = Vector2( 0, 400 )
+script = ExtResource( 24 )
+
+[node name="Deck_Icon" type="Sprite" parent="Card_Tray"]
+position = Vector2( 705, 515 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Number" type="Label" parent="Card_Tray/Deck_Icon"]
+margin_top = -2.0
+margin_right = 42.0
+margin_bottom = 35.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Discard_Icon" type="Sprite" parent="Card_Tray"]
+position = Vector2( 755, 515 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="Number" type="Label" parent="Card_Tray/Discard_Icon"]
+margin_top = -2.0
+margin_right = 42.0
+margin_bottom = 35.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="End_Turn_Button" type="Sprite" parent="Card_Tray"]
+texture = ExtResource( 16 )
+centered = false
+offset = Vector2( 705, 552 )
+
+[node name="Options_Button" type="Sprite" parent="Card_Tray"]
+texture = ExtResource( 4 )
+centered = false
+offset = Vector2( 705, 408 )
+
+[node name="Hawk_Plate" type="Sprite" parent="."]
+texture = ExtResource( 8 )
+centered = false
+offset = Vector2( 5, 5 )
+script = ExtResource( 25 )
+
+[node name="Action_Orb_1" type="Sprite" parent="Hawk_Plate"]
+texture = ExtResource( 17 )
+centered = false
+offset = Vector2( 10, 10 )
+
+[node name="Action_Orb_2" type="Sprite" parent="Hawk_Plate"]
+texture = ExtResource( 17 )
+centered = false
+offset = Vector2( 35, 10 )
+
+[node name="Action_Orb_3" type="Sprite" parent="Hawk_Plate"]
+texture = ExtResource( 17 )
+centered = false
+offset = Vector2( 60, 10 )
+
+[node name="Action_Orb_4" type="Sprite" parent="Hawk_Plate"]
+texture = ExtResource( 17 )
+centered = false
+offset = Vector2( 85, 10 )
+
+[node name="HP_text" type="Label" parent="Hawk_Plate"]
+margin_left = 173.0
+margin_top = 11.0
+margin_right = 208.0
+margin_bottom = 36.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_bar" type="Node2D" parent="Hawk_Plate"]
+position = Vector2( 5, 5 )
+script = ExtResource( 29 )
+
+[node name="Effect_1" type="Sprite" parent="Hawk_Plate"]
+position = Vector2( 10, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Hawk_Plate/Effect_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_2" type="Sprite" parent="Hawk_Plate"]
+position = Vector2( 51, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Hawk_Plate/Effect_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_3" type="Sprite" parent="Hawk_Plate"]
+position = Vector2( 92, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Hawk_Plate/Effect_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_4" type="Sprite" parent="Hawk_Plate"]
+position = Vector2( 133, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Hawk_Plate/Effect_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_5" type="Sprite" parent="Hawk_Plate"]
+position = Vector2( 174, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Hawk_Plate/Effect_5"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Finch_Plate" type="Sprite" parent="."]
+texture = ExtResource( 5 )
+centered = false
+offset = Vector2( 5, 95 )
+script = ExtResource( 25 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Action_Orb_1" type="Sprite" parent="Finch_Plate"]
+texture = ExtResource( 21 )
+centered = false
+offset = Vector2( 10, 100 )
+
+[node name="Action_Orb_2" type="Sprite" parent="Finch_Plate"]
+texture = ExtResource( 21 )
+centered = false
+offset = Vector2( 35, 100 )
+
+[node name="Action_Orb_3" type="Sprite" parent="Finch_Plate"]
+texture = ExtResource( 21 )
+centered = false
+offset = Vector2( 60, 100 )
+
+[node name="Action_Orb_4" type="Sprite" parent="Finch_Plate"]
+texture = ExtResource( 21 )
+centered = false
+offset = Vector2( 85, 100 )
+
+[node name="HP_text" type="Label" parent="Finch_Plate"]
+margin_left = 173.0
+margin_top = 101.0
+margin_right = 208.0
+margin_bottom = 126.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_bar" type="Node2D" parent="Finch_Plate"]
+position = Vector2( 5, 95 )
+script = ExtResource( 29 )
+
+[node name="Effect_1" type="Sprite" parent="Finch_Plate"]
+position = Vector2( 10, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Finch_Plate/Effect_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_2" type="Sprite" parent="Finch_Plate"]
+position = Vector2( 51, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Finch_Plate/Effect_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_3" type="Sprite" parent="Finch_Plate"]
+position = Vector2( 92, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Finch_Plate/Effect_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_4" type="Sprite" parent="Finch_Plate"]
+position = Vector2( 133, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Finch_Plate/Effect_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_5" type="Sprite" parent="Finch_Plate"]
+position = Vector2( 174, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Finch_Plate/Effect_5"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Peacock_Plate" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( 5, 185 )
+script = ExtResource( 25 )
+
+[node name="Action_Orb_1" type="Sprite" parent="Peacock_Plate"]
+texture = ExtResource( 19 )
+centered = false
+offset = Vector2( 10, 190 )
+
+[node name="Action_Orb_2" type="Sprite" parent="Peacock_Plate"]
+texture = ExtResource( 19 )
+centered = false
+offset = Vector2( 35, 190 )
+
+[node name="Action_Orb_3" type="Sprite" parent="Peacock_Plate"]
+texture = ExtResource( 19 )
+centered = false
+offset = Vector2( 60, 190 )
+
+[node name="Action_Orb_4" type="Sprite" parent="Peacock_Plate"]
+texture = ExtResource( 19 )
+centered = false
+offset = Vector2( 85, 190 )
+
+[node name="HP_text" type="Label" parent="Peacock_Plate"]
+margin_left = 173.0
+margin_top = 191.0
+margin_right = 208.0
+margin_bottom = 216.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_bar" type="Node2D" parent="Peacock_Plate"]
+position = Vector2( 5, 185 )
+script = ExtResource( 29 )
+
+[node name="Effect_1" type="Sprite" parent="Peacock_Plate"]
+position = Vector2( 10, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Peacock_Plate/Effect_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_2" type="Sprite" parent="Peacock_Plate"]
+position = Vector2( 51, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Peacock_Plate/Effect_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_3" type="Sprite" parent="Peacock_Plate"]
+position = Vector2( 92, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Peacock_Plate/Effect_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_4" type="Sprite" parent="Peacock_Plate"]
+position = Vector2( 133, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Peacock_Plate/Effect_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_5" type="Sprite" parent="Peacock_Plate"]
+position = Vector2( 174, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Peacock_Plate/Effect_5"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Swan_Plate" type="Sprite" parent="."]
+texture = ExtResource( 9 )
+centered = false
+offset = Vector2( 5, 275 )
+script = ExtResource( 25 )
+
+[node name="Action_Orb_1" type="Sprite" parent="Swan_Plate"]
+texture = ExtResource( 20 )
+centered = false
+offset = Vector2( 10, 280 )
+
+[node name="Action_Orb_2" type="Sprite" parent="Swan_Plate"]
+texture = ExtResource( 20 )
+centered = false
+offset = Vector2( 35, 280 )
+
+[node name="Action_Orb_3" type="Sprite" parent="Swan_Plate"]
+texture = ExtResource( 20 )
+centered = false
+offset = Vector2( 60, 280 )
+
+[node name="Action_Orb_4" type="Sprite" parent="Swan_Plate"]
+texture = ExtResource( 20 )
+centered = false
+offset = Vector2( 85, 280 )
+
+[node name="HP_text" type="Label" parent="Swan_Plate"]
+margin_left = 173.0
+margin_top = 281.0
+margin_right = 208.0
+margin_bottom = 306.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_bar" type="Node2D" parent="Swan_Plate"]
+position = Vector2( 5, 275 )
+script = ExtResource( 29 )
+
+[node name="Effect_1" type="Sprite" parent="Swan_Plate"]
+position = Vector2( 10, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Swan_Plate/Effect_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_2" type="Sprite" parent="Swan_Plate"]
+position = Vector2( 51, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Swan_Plate/Effect_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_3" type="Sprite" parent="Swan_Plate"]
+position = Vector2( 92, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Swan_Plate/Effect_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_4" type="Sprite" parent="Swan_Plate"]
+position = Vector2( 133, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Swan_Plate/Effect_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_5" type="Sprite" parent="Swan_Plate"]
+position = Vector2( 174, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Swan_Plate/Effect_5"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enemy_Plate_1" type="Sprite" parent="."]
+texture = ExtResource( 10 )
+centered = false
+offset = Vector2( 585, 5 )
+script = ExtResource( 22 )
+
+[node name="HP_text" type="Label" parent="Enemy_Plate_1"]
+margin_left = 753.0
+margin_top = 11.0
+margin_right = 788.0
+margin_bottom = 36.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_bar" type="Node2D" parent="Enemy_Plate_1"]
+position = Vector2( 585, 5 )
+script = ExtResource( 29 )
+
+[node name="Effect_1" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 590, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Effect_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_2" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 631, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Effect_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_3" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 672, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Effect_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_4" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 713, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Effect_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_5" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 754, 60 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Effect_5"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_1" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 590, 10 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Attack_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_2" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 631, 10 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Attack_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_3" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 672, 10 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Attack_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_4" type="Sprite" parent="Enemy_Plate_1"]
+position = Vector2( 713, 10 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_1/Attack_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enemy_Plate_2" type="Sprite" parent="."]
+texture = ExtResource( 10 )
+centered = false
+offset = Vector2( 585, 95 )
+script = ExtResource( 22 )
+
+[node name="HP_text" type="Label" parent="Enemy_Plate_2"]
+margin_left = 753.0
+margin_top = 101.0
+margin_right = 788.0
+margin_bottom = 126.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_bar" type="Node2D" parent="Enemy_Plate_2"]
+position = Vector2( 585, 95 )
+script = ExtResource( 29 )
+
+[node name="Effect_1" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 590, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Effect_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_2" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 631, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Effect_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_3" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 672, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Effect_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_4" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 713, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Effect_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_5" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 754, 150 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Effect_5"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_1" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 590, 100 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Attack_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_2" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 631, 100 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Attack_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_3" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 672, 100 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Attack_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_4" type="Sprite" parent="Enemy_Plate_2"]
+position = Vector2( 713, 100 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_2/Attack_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enemy_Plate_3" type="Sprite" parent="."]
+texture = ExtResource( 10 )
+centered = false
+offset = Vector2( 585, 185 )
+script = ExtResource( 22 )
+
+[node name="HP_text" type="Label" parent="Enemy_Plate_3"]
+margin_left = 753.0
+margin_top = 191.0
+margin_right = 788.0
+margin_bottom = 216.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_bar" type="Node2D" parent="Enemy_Plate_3"]
+position = Vector2( 585, 185 )
+script = ExtResource( 29 )
+
+[node name="Effect_1" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 590, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Effect_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_2" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 631, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Effect_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_3" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 672, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Effect_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_4" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 713, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Effect_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_5" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 754, 240 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Effect_5"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_1" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 590, 190 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Attack_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_2" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 631, 190 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Attack_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_3" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 672, 190 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Attack_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_4" type="Sprite" parent="Enemy_Plate_3"]
+position = Vector2( 713, 190 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_3/Attack_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enemy_Plate_4" type="Sprite" parent="."]
+texture = ExtResource( 10 )
+centered = false
+offset = Vector2( 585, 275 )
+script = ExtResource( 22 )
+
+[node name="HP_text" type="Label" parent="Enemy_Plate_4"]
+margin_left = 753.0
+margin_top = 281.0
+margin_right = 788.0
+margin_bottom = 306.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0/0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP_bar" type="Node2D" parent="Enemy_Plate_4"]
+position = Vector2( 585, 275 )
+script = ExtResource( 29 )
+
+[node name="Effect_1" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 590, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Effect_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_2" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 631, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Effect_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_3" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 672, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Effect_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_4" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 713, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Effect_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Effect_5" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 754, 330 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Effect_5"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_1" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 590, 280 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Attack_1"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_2" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 631, 280 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Attack_2"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_3" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 672, 280 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Attack_3"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack_4" type="Sprite" parent="Enemy_Plate_4"]
+position = Vector2( 713, 280 )
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Number" type="Label" parent="Enemy_Plate_4/Attack_4"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hawk" type="Sprite" parent="."]
+texture = ExtResource( 11 )
+offset = Vector2( 260, 45 )
+script = ExtResource( 23 )
+
+[node name="Finch" type="Sprite" parent="."]
+texture = ExtResource( 12 )
+offset = Vector2( 260, 135 )
+script = ExtResource( 23 )
+
+[node name="Peacock" type="Sprite" parent="."]
+texture = ExtResource( 6 )
+offset = Vector2( 260, 225 )
+script = ExtResource( 23 )
+
+[node name="Swan" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+offset = Vector2( 260, 315 )
+script = ExtResource( 23 )
+
+[node name="Enemy_1" type="Sprite" parent="."]
+texture = ExtResource( 13 )
+offset = Vector2( 540, 45 )
+script = ExtResource( 26 )
+
+[node name="Enemy_2" type="Sprite" parent="."]
+texture = ExtResource( 13 )
+offset = Vector2( 540, 135 )
+script = ExtResource( 26 )
+
+[node name="Enemy_3" type="Sprite" parent="."]
+texture = ExtResource( 13 )
+offset = Vector2( 540, 225 )
+script = ExtResource( 26 )
+
+[node name="Enemy_4" type="Sprite" parent="."]
+texture = ExtResource( 13 )
+offset = Vector2( 540, 315 )
+script = ExtResource( 26 )
+
+[node name="Sound_Effect_Player" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 30 )
+
+[node name="Tooltip" type="Sprite" parent="."]
+position = Vector2( 249.615, 383.099 )
+texture = ExtResource( 27 )
+centered = false
+
+[node name="Icon" type="Sprite" parent="Tooltip"]
+position = Vector2( 10, 10 )
+texture = ExtResource( 33 )
+centered = false
+
+[node name="Number" type="Label" parent="Tooltip/Icon"]
+margin_top = -4.0
+margin_right = 35.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Description" type="Label" parent="Tooltip"]
+margin_left = 53.0
+margin_top = 4.0
+margin_right = 295.0
+margin_bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "Effect Description may extend over multiple lines"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

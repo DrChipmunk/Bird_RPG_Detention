@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lifeline_card-004.wav-a73c44ea6db9e1759c123791b78b7d84.sample"
+
+[deps]
+
+source_file="res://sounds/lifeline_card-004.wav"
+dest_files=[ "res://.import/lifeline_card-004.wav-a73c44ea6db9e1759c123791b78b7d84.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

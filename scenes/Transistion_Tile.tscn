@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/transition_tile.png" type="Texture" id=1]
+[ext_resource path="res://Transistion_Tile.gd" type="Script" id=2]
+
+[node name="Transistion_Tile" type="Sprite"]
+visible = false
+z_index = 100
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 2 )

@@ -1,0 +1,26 @@
+Location: Detention.png
+# Should be a modified background with silhouette of pheasant in window
+L: Hawk Finch
+R: Ground_Dove Rock_Pigeon
+Hawk: Scram, dudes! I’m not buying your candy! For now.
+Rock_Pigeon: Ooogh...you’ll pay for this, friend.
+Ground_Dove: Aaagh…with interest!
+R: !Ground_Dove(fades) !Rock_Pigeon(fades)
+Finch: Thank god they’re gone. At least detention wasn’t so boring this time.
+R: Shadowy_Figure
+Shadowy_Figure: That was some excellent combat, you two.
+# Might do something with background here
+Shadowy_Figure: If you want to do something more worth your time, I have a potential errand for you.
+Hawk: I dunno, dude. Might not be allowed to do try-outs if I skip detention.
+Finch: Errands? I’d rather do, like, anything else.
+Shadowy_Figure: I’ll give you an allowance of sorts. How does $100 sound?
+L: Hawk Finch Swan
+Swan: I’m in.
+Finch: You didn’t even fight!
+Shadowy_Figure: The more wings the merrier. If you two ladies change your mind, come to the museum at 4:30. Ask for a Mr. Pheasant.
+R: !Shadowy_Figure
+Hawk: Detention ends at five…
+R: Teacher
+Teacher: zzz
+R: !Teacher
+Hawk: Let’s go!

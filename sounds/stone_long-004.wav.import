@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stone_long-004.wav-b34b918a3c23018a707c57383f451c82.sample"
+
+[deps]
+
+source_file="res://sounds/stone_long-004.wav"
+dest_files=[ "res://.import/stone_long-004.wav-b34b918a3c23018a707c57383f451c82.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

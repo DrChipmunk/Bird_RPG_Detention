@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Tutorial_1_Highlight.gd" type="Script" id=1]
+[ext_resource path="res://sprites/tutorial_highlight_1a.png" type="Texture" id=2]
+
+[node name="Particle_Tutorial_1_Highlight" type="Node2D"]
+z_index = 2
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 400, 300 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false

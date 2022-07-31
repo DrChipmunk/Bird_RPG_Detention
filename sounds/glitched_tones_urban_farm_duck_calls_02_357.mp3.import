@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/glitched_tones_urban_farm_duck_calls_02_357.mp3-3254d7ef71a0515578787a966f7e5484.mp3str"
+
+[deps]
+
+source_file="res://sounds/glitched_tones_urban_farm_duck_calls_02_357.mp3"
+dest_files=[ "res://.import/glitched_tones_urban_farm_duck_calls_02_357.mp3-3254d7ef71a0515578787a966f7e5484.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

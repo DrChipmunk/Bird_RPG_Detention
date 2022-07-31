@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dialogue_low_long-003.wav-6c2b3f6c7c0fb1df6830c641c99d85f6.sample"
+
+[deps]
+
+source_file="res://sounds/dialogue_low_long-003.wav"
+dest_files=[ "res://.import/dialogue_low_long-003.wav-6c2b3f6c7c0fb1df6830c641c99d85f6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

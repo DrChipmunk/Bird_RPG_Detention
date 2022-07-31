@@ -1,0 +1,11 @@
+Location: Detention.png
+# background: outside museum
+L: Hawk Finch Swan
+Hawk: Woah! I didn’t know we had such a large museum.
+Finch: It’s like, the only building taller than a house here.
+R: Peacock
+Peacock: Welcome to the Museum of Avian History! Are you here to enjoy our seasonal dinosaur collection?
+Swan: We need to see Mr. Pheasant. 
+Peacock: Welcome to-sorry. I meant, Mr. Pheasant told me about you. He’s waiting for you just right this way.
+N: Peacock, our final hero, was too nervous about how detention would affect his chances of getting into college to get into any trouble. Until today.
+

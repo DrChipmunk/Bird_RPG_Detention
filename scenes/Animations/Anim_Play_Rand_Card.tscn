@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/Animations/Anim_Play_Rand_Card.gd" type="Script" id=1]
+
+[node name="Anim_Play_Rand_Card" type="Node2D"]
+script = ExtResource( 1 )

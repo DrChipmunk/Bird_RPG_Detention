@@ -1,0 +1,44 @@
+Location: Detention.png
+# background: track
+L: Hawk Finch
+R: Eagle Jocks
+Jocks: ow, ow, ow, ow.
+Eagle: Bros, think of all the gains, ow, you’ll get from these pains!
+Hawk: We won?
+Hawk: I mean, yeah of course we won! Woohoo!
+Eagle: Good game, bro! You better be there for try-outs. And bring your yellow friend too!
+Finch: I told you lifting isn’t-what?
+Eagle: Dude, you’ve got a metaphysical eight-pack right there. The team would love to have someone who can take hits like you.
+Finch: Oh! Really? Like, thanks. Actually.
+Eagle: A deal’s a deal. Off the field, girls!
+Jocks: Hoo-Haa! Ow. Hoo-Haa!
+Hawk: See you tomorrow, bros!
+R: 
+Hawk: Alright! Let’s lick this place clean!
+Finch: We’re not a sports team, dude. Dangit.
+L: Hawk
+N: And so, our heroes scoured the ground for clues.
+Hawk: I’m bored. Who should I bother?
+# implement selection
+R: Peacock
+Peacock: Sorry, everything over here’s useless, like me.
+Hawk: Okay?
+R: Swan
+Swan: The darkness in this corner...really fits my mood right now.
+Hawk: Cool?
+R: Finch
+Finch: I’ve got the culprit!
+Hawk: Awesome, dude! What did you find?
+N: Finch produces a poster showing four songbirds with cool sunglasses on a stage. A t-rex is on the background.
+# add actual poster
+# <Screen shows poster: four songbirds with cool sunglasses on a stage. A t-rex is on the background. No sprites happen for the following conversation>
+Finch: This is a poster for tonight’s PEEP concert. Look at the dinosaur in the back. It totally came from Mr. Pheasant.
+L: Hawk Peacock
+Peacock: That doesn’t make sense. Why would a boyband steal museum artifacts? They could just create their own fake props.
+Finch: I don’t know, because it’d be, like, cheaper? They were handing out posters at an event last night here, promising a grand new attraction. It has to be the bones in the poster!
+R: Finch Swan
+Swan: That’s not the most flimsy reasoning, but I still doubt it.
+Hawk: Believe in her, dude! She probably knows a lot about them because she’s a PEEPer!
+Finch: Don’t. Say that word. Anyways, it’s definitely them. Their concert’s tonight at the park.
+Peacock: I guess we don’t have any better leads.
+Hawk: Let’s crash a concert, bros!

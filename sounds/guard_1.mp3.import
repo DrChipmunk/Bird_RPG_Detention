@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/guard_1.mp3-25b9de4a61561e5e3298ae8d33ad3a4c.mp3str"
+
+[deps]
+
+source_file="res://sounds/guard_1.mp3"
+dest_files=[ "res://.import/guard_1.mp3-25b9de4a61561e5e3298ae8d33ad3a4c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

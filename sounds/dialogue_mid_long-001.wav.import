@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dialogue_mid_long-001.wav-43c9a5c8bb5cb0f2d21c68d33b519605.sample"
+
+[deps]
+
+source_file="res://sounds/dialogue_mid_long-001.wav"
+dest_files=[ "res://.import/dialogue_mid_long-001.wav-43c9a5c8bb5cb0f2d21c68d33b519605.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/improvise_card-009.wav-c592309759df5ffd2ba2cc9d469d1683.sample"
+
+[deps]
+
+source_file="res://sounds/improvise_card-009.wav"
+dest_files=[ "res://.import/improvise_card-009.wav-c592309759df5ffd2ba2cc9d469d1683.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

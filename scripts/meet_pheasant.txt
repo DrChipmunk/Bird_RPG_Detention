@@ -1,0 +1,20 @@
+Location: Detention.png
+# background: inside museum
+L: Hawk Finch Swan
+R: Pheasant
+Pheasant: There you are! Good to see all three of you here.
+Pheasant: I’m Mr. Pheasant, the owner of the museum. As you can see in the corner, the collection of corvidae-
+Swan: Skip the pleasantries. What do you want us here for?
+Pheasant: My precious dinosaur bones! Someone made off with them last night, and now my beautiful collection is gone!
+Finch: Do you, like, know who did it?
+Pheasant: The thief had shut down all the cameras before they committed their heinous deed. I’ve not a clue who it could be.
+N: <Alarm rings>
+R: Pheasant Quail
+Quail: Help, Mr. Pheasant! Thief!
+R: Magpie
+# magpie may be a modified sprite with bling
+Magpie: I know who did it! That suspicious crow over there is wearing your entire necklace collection!
+Finch: …seriously?
+Hawk: Get her!
+L: Hawk Finch Peacock Swan
+Peacock: I’ll help too!

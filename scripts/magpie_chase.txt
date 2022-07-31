@@ -1,0 +1,20 @@
+Location: Detention.png
+# background: street
+L: Hawk Swan
+R: Peacock Finch
+Hawk: Argh, we’ve been searching for so long and she’s nowhere, dudes. I’m starting to think it’s a bust.
+Peacock: We’ve only been outside for five minutes.
+Finch: If she’s a thief, she likes, money, right? Maybe we should go to where the money is. Like, the bank or an ATM.
+Swan: Oh come on, she’s not actually going to be-
+R: Magpie
+Hawk: There you are, Magpie! You’re not escaping this time!
+Magpie: *sweats * Police, help! These four hooligans are attacking me!
+R: Bluejay Magpie
+Bluejay: Halt, ruffians!
+Hawk: Hold on, bro! She’s the crim-
+Bluejay: Enough of your excuses. I won’t let you harm any innocents under my lawful watch!
+R: Bluejay Disguised_Figure
+Disguised_Figure: I too, as a fellow of the law, will assist you, the police, against these four criminals.
+L: Peacock Swan
+Peacock: Will we really have to assault a policeman?
+Swan: I’ve been waiting years for an excuse to.

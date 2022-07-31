@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lights_card.wav-00554307f8aaeb6c5df42637670e0b13.sample"
+
+[deps]
+
+source_file="res://sounds/lights_card.wav"
+dest_files=[ "res://.import/lights_card.wav-00554307f8aaeb6c5df42637670e0b13.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

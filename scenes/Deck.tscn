@@ -1,0 +1,992 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://sprites/decklist_background.png" type="Texture" id=1]
+[ext_resource path="res://sprites/tab_peacock_off.png" type="Texture" id=2]
+[ext_resource path="res://sprites/button_minus_on.png" type="Texture" id=3]
+[ext_resource path="res://sprites/button_plus_on.png" type="Texture" id=4]
+[ext_resource path="res://sprites/tab_finch_off.png" type="Texture" id=5]
+[ext_resource path="res://sprites/deck_top_right_panel.png" type="Texture" id=6]
+[ext_resource path="res://sprites/card_plate.png" type="Texture" id=7]
+[ext_resource path="res://sprites/card_light_lit.png" type="Texture" id=8]
+[ext_resource path="res://sprites/tab_neutral_off.png" type="Texture" id=9]
+[ext_resource path="res://sprites/tab_hawk_off.png" type="Texture" id=10]
+[ext_resource path="res://sprites/tab_swan_off.png" type="Texture" id=11]
+[ext_resource path="res://sprites/tab_multiple_off.png" type="Texture" id=12]
+[ext_resource path="res://sprites/options_button.png" type="Texture" id=13]
+[ext_resource path="res://fonts/times.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://sprites/peck.png" type="Texture" id=15]
+[ext_resource path="res://sprites/decklist_count_neutral.png" type="Texture" id=16]
+[ext_resource path="res://sprites/decklist_card_neutral.png" type="Texture" id=17]
+[ext_resource path="res://sprites/decklist_count_swan.png" type="Texture" id=18]
+[ext_resource path="res://sprites/decklist_count_hawk.png" type="Texture" id=19]
+[ext_resource path="res://sprites/decklist_count_peacock.png" type="Texture" id=20]
+[ext_resource path="res://sprites/decklist_count_finch.png" type="Texture" id=21]
+[ext_resource path="res://sprites/decklist_count_multiple.png" type="Texture" id=22]
+[ext_resource path="res://sprites/button_fight.png" type="Texture" id=23]
+[ext_resource path="res://scenes/Deck.gd" type="Script" id=24]
+[ext_resource path="res://sprites/card_plate_absence.png" type="Texture" id=25]
+[ext_resource path="res://sprites/tab_dne.png" type="Texture" id=26]
+[ext_resource path="res://scenes/Sound_Effect_Player.gd" type="Script" id=27]
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+font_data = ExtResource( 14 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 18
+font_data = ExtResource( 14 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 19
+font_data = ExtResource( 14 )
+
+[node name="Deck" type="Node2D"]
+pause_mode = 1
+script = ExtResource( 24 )
+
+[node name="Decklist_Background" type="Sprite" parent="."]
+position = Vector2( 600, 100 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Top_Right_Background" type="Sprite" parent="."]
+position = Vector2( 600, 0 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Plate_Background_1" type="Sprite" parent="."]
+position = Vector2( 0, 100 )
+texture = ExtResource( 25 )
+centered = false
+
+[node name="Plate_Background_2" type="Sprite" parent="."]
+position = Vector2( 200, 100 )
+texture = ExtResource( 25 )
+centered = false
+
+[node name="Plate_Background_3" type="Sprite" parent="."]
+position = Vector2( 400, 100 )
+texture = ExtResource( 25 )
+centered = false
+
+[node name="Plate_Background_4" type="Sprite" parent="."]
+position = Vector2( 0, 350 )
+texture = ExtResource( 25 )
+centered = false
+
+[node name="Plate_Background_5" type="Sprite" parent="."]
+position = Vector2( 200, 350 )
+texture = ExtResource( 25 )
+centered = false
+
+[node name="Plate_Background_6" type="Sprite" parent="."]
+position = Vector2( 400, 350 )
+texture = ExtResource( 25 )
+centered = false
+
+[node name="Card_Plate_1" type="Sprite" parent="."]
+position = Vector2( 0, 100 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Plus" type="Sprite" parent="Card_Plate_1"]
+position = Vector2( 105, 5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Minus" type="Sprite" parent="Card_Plate_1"]
+position = Vector2( 105, 105 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Card" type="Sprite" parent="Card_Plate_1"]
+position = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="Light_1" type="Sprite" parent="Card_Plate_1"]
+position = Vector2( 5, 205 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_2" type="Sprite" parent="Card_Plate_1"]
+position = Vector2( 5, 220 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_3" type="Sprite" parent="Card_Plate_1"]
+position = Vector2( 5, 235 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Card_Plate_2" type="Sprite" parent="."]
+position = Vector2( 200, 100 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Plus" type="Sprite" parent="Card_Plate_2"]
+position = Vector2( 105, 5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Minus" type="Sprite" parent="Card_Plate_2"]
+position = Vector2( 105, 105 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Card" type="Sprite" parent="Card_Plate_2"]
+position = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="Light_1" type="Sprite" parent="Card_Plate_2"]
+position = Vector2( 5, 205 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_2" type="Sprite" parent="Card_Plate_2"]
+position = Vector2( 5, 220 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_3" type="Sprite" parent="Card_Plate_2"]
+position = Vector2( 5, 235 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Card_Plate_3" type="Sprite" parent="."]
+position = Vector2( 400, 100 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Plus" type="Sprite" parent="Card_Plate_3"]
+position = Vector2( 105, 5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Minus" type="Sprite" parent="Card_Plate_3"]
+position = Vector2( 105, 105 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Card" type="Sprite" parent="Card_Plate_3"]
+position = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="Light_1" type="Sprite" parent="Card_Plate_3"]
+position = Vector2( 5, 205 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_2" type="Sprite" parent="Card_Plate_3"]
+position = Vector2( 5, 220 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_3" type="Sprite" parent="Card_Plate_3"]
+position = Vector2( 5, 235 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Card_Plate_4" type="Sprite" parent="."]
+position = Vector2( 0, 350 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Plus" type="Sprite" parent="Card_Plate_4"]
+position = Vector2( 105, 5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Minus" type="Sprite" parent="Card_Plate_4"]
+position = Vector2( 105, 105 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Card" type="Sprite" parent="Card_Plate_4"]
+position = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="Light_1" type="Sprite" parent="Card_Plate_4"]
+position = Vector2( 5, 205 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_2" type="Sprite" parent="Card_Plate_4"]
+position = Vector2( 5, 220 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_3" type="Sprite" parent="Card_Plate_4"]
+position = Vector2( 5, 235 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Card_Plate_5" type="Sprite" parent="."]
+position = Vector2( 200, 350 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Plus" type="Sprite" parent="Card_Plate_5"]
+position = Vector2( 105, 5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Minus" type="Sprite" parent="Card_Plate_5"]
+position = Vector2( 105, 105 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Card" type="Sprite" parent="Card_Plate_5"]
+position = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="Light_1" type="Sprite" parent="Card_Plate_5"]
+position = Vector2( 5, 205 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_2" type="Sprite" parent="Card_Plate_5"]
+position = Vector2( 5, 220 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_3" type="Sprite" parent="Card_Plate_5"]
+position = Vector2( 5, 235 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Card_Plate_6" type="Sprite" parent="."]
+position = Vector2( 400, 350 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Plus" type="Sprite" parent="Card_Plate_6"]
+position = Vector2( 105, 5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Minus" type="Sprite" parent="Card_Plate_6"]
+position = Vector2( 105, 105 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Card" type="Sprite" parent="Card_Plate_6"]
+position = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="Light_1" type="Sprite" parent="Card_Plate_6"]
+position = Vector2( 5, 205 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_2" type="Sprite" parent="Card_Plate_6"]
+position = Vector2( 5, 220 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Light_3" type="Sprite" parent="Card_Plate_6"]
+position = Vector2( 5, 235 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Tab_Background_1" type="Sprite" parent="."]
+texture = ExtResource( 26 )
+centered = false
+
+[node name="Tab_Background_2" type="Sprite" parent="."]
+position = Vector2( 100, 0 )
+texture = ExtResource( 26 )
+centered = false
+
+[node name="Tab_Background_3" type="Sprite" parent="."]
+position = Vector2( 200, 0 )
+texture = ExtResource( 26 )
+centered = false
+
+[node name="Tab_Background_4" type="Sprite" parent="."]
+position = Vector2( 300, 0 )
+texture = ExtResource( 26 )
+centered = false
+
+[node name="Tab_Background_5" type="Sprite" parent="."]
+position = Vector2( 400, 0 )
+texture = ExtResource( 26 )
+centered = false
+
+[node name="Tab_Background_6" type="Sprite" parent="."]
+position = Vector2( 500, 0 )
+texture = ExtResource( 26 )
+centered = false
+
+[node name="Tab_1" type="Sprite" parent="."]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Tab_2" type="Sprite" parent="."]
+position = Vector2( 100, 0 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="Tab_3" type="Sprite" parent="."]
+position = Vector2( 200, 0 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Tab_4" type="Sprite" parent="."]
+position = Vector2( 300, 0 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Tab_5" type="Sprite" parent="."]
+position = Vector2( 400, 0 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="Tab_6" type="Sprite" parent="."]
+position = Vector2( 500, 0 )
+texture = ExtResource( 12 )
+centered = false
+
+[node name="Options" type="Sprite" parent="."]
+position = Vector2( 655, 5 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="Start_Fight" type="Sprite" parent="."]
+position = Vector2( 655, 55 )
+texture = ExtResource( 23 )
+centered = false
+
+[node name="Count_1" type="Sprite" parent="."]
+position = Vector2( 611, 126 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="Label" type="Label" parent="Count_1"]
+margin_top = -1.0
+margin_right = 28.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Count_2" type="Sprite" parent="."]
+position = Vector2( 641, 126 )
+texture = ExtResource( 19 )
+centered = false
+
+[node name="Label" type="Label" parent="Count_2"]
+margin_top = -1.0
+margin_right = 28.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Count_3" type="Sprite" parent="."]
+position = Vector2( 671, 126 )
+texture = ExtResource( 21 )
+centered = false
+
+[node name="Label" type="Label" parent="Count_3"]
+margin_top = -1.0
+margin_right = 28.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Count_4" type="Sprite" parent="."]
+position = Vector2( 701, 126 )
+texture = ExtResource( 20 )
+centered = false
+
+[node name="Label" type="Label" parent="Count_4"]
+margin_top = -1.0
+margin_right = 28.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Count_5" type="Sprite" parent="."]
+position = Vector2( 731, 126 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Label" type="Label" parent="Count_5"]
+margin_top = -1.0
+margin_right = 28.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Count_6" type="Sprite" parent="."]
+position = Vector2( 761, 126 )
+texture = ExtResource( 22 )
+centered = false
+
+[node name="Label" type="Label" parent="Count_6"]
+margin_top = -1.0
+margin_right = 28.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_1" type="Sprite" parent="."]
+position = Vector2( 605, 155 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_1"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_2" type="Sprite" parent="."]
+position = Vector2( 605, 185 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_2"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_3" type="Sprite" parent="."]
+position = Vector2( 605, 215 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_3"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_4" type="Sprite" parent="."]
+position = Vector2( 605, 245 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_4"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_5" type="Sprite" parent="."]
+position = Vector2( 605, 275 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_5"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_6" type="Sprite" parent="."]
+position = Vector2( 605, 305 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_6"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_7" type="Sprite" parent="."]
+position = Vector2( 605, 335 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_7"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_8" type="Sprite" parent="."]
+position = Vector2( 605, 365 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_8"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_9" type="Sprite" parent="."]
+position = Vector2( 605, 395 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_9"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_10" type="Sprite" parent="."]
+position = Vector2( 605, 425 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_10"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_11" type="Sprite" parent="."]
+position = Vector2( 605, 455 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_11"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_12" type="Sprite" parent="."]
+position = Vector2( 605, 485 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_12"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_13" type="Sprite" parent="."]
+position = Vector2( 605, 515 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_13"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_14" type="Sprite" parent="."]
+position = Vector2( 605, 545 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_14"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_15" type="Sprite" parent="."]
+position = Vector2( 605, 575 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_15"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_16" type="Sprite" parent="."]
+position = Vector2( 705, 155 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_16"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_17" type="Sprite" parent="."]
+position = Vector2( 705, 185 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_17"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_18" type="Sprite" parent="."]
+position = Vector2( 705, 215 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_18"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_19" type="Sprite" parent="."]
+position = Vector2( 705, 245 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_19"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_20" type="Sprite" parent="."]
+position = Vector2( 705, 275 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_20"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_21" type="Sprite" parent="."]
+position = Vector2( 705, 305 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_21"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_22" type="Sprite" parent="."]
+position = Vector2( 705, 335 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_22"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_23" type="Sprite" parent="."]
+position = Vector2( 705, 365 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_23"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_24" type="Sprite" parent="."]
+position = Vector2( 705, 395 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_24"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_25" type="Sprite" parent="."]
+position = Vector2( 705, 425 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_25"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_26" type="Sprite" parent="."]
+position = Vector2( 705, 455 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_26"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_27" type="Sprite" parent="."]
+position = Vector2( 705, 485 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_27"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_28" type="Sprite" parent="."]
+position = Vector2( 705, 515 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_28"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_29" type="Sprite" parent="."]
+position = Vector2( 705, 545 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_29"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Decklist_30" type="Sprite" parent="."]
+position = Vector2( 705, 575 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Label" type="Label" parent="Decklist_30"]
+margin_top = -1.0
+margin_right = 90.0
+margin_bottom = 16.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Peck"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Deck_Label" type="Label" parent="."]
+anchor_right = 0.049
+margin_left = 600.0
+margin_top = 103.0
+margin_right = 796.0
+margin_bottom = 119.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "30 / 30"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sound_Effect_Player" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 27 )

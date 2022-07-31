@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tile_transition_out-001.wav-e8a79a8faa14cdb09da7400e5bb927e4.sample"
+
+[deps]
+
+source_file="res://sounds/tile_transition_out-001.wav"
+dest_files=[ "res://.import/tile_transition_out-001.wav-e8a79a8faa14cdb09da7400e5bb927e4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

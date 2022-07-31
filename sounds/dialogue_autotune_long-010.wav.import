@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dialogue_autotune_long-010.wav-23a1f7efa1e9156bf7bfee7ed95eab32.sample"
+
+[deps]
+
+source_file="res://sounds/dialogue_autotune_long-010.wav"
+dest_files=[ "res://.import/dialogue_autotune_long-010.wav-23a1f7efa1e9156bf7bfee7ed95eab32.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

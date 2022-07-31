@@ -1,0 +1,31 @@
+Location: Detention.png
+# background: street
+L: Finch Peacock
+R: Bluejay Magpie
+Bluejay: stop…ugh…*thud *
+R: !Bluejay(fades) Magpie
+Finch: Alright, Magpie, where’d you take those dinosaur bones?
+Magpie: I never stole any dinosaur bones! I’ve never seen dinosaur bones in my entire life.
+Peacock: We...caught you on camera last night!
+Magpie: Impossible! I disabled them…I meant, avoided them. Because I was never there. *sweats* 
+L: Swan Peacock
+Swan: Tell us everything about those bones, unless you want me to squeeze it out the swan-fashioned way.
+Magpie: Okay, okay, I took the bones last night! I was just told to bring the loot to the track field by my client. And I did. It was a clean job.
+Swan: Who did you give the bones to?
+Magpie: I don’t know. It was dark, and they were covering their face. I’m sorry, that’s really all I can tell you!
+R: Bluejay Magpie
+Bluejay: What’s going on…hey, you! How dare you assault an officer of the law? Do you know what kind of charges you’ll face?
+Hawk: We did nothing wrong. Magpie’s the one you should be arresting!
+Swan: She stole dinosaur fossils. We captured her. You’re welcome.
+Magpie: I’m innocent. Never broke the law before.
+Swan: Ahem.
+Magpie: I stole Mr. Pheasant’s dinosaur bones.
+Bluejay: Well, it appears this whole incident was a misunderstanding. I must apologize. I came to the wrong conclusions after your…company.
+Swan: …
+Peacock: Thank you for letting this go, Bluejay. Mr. Pheasant will be ecstatic to have his thief locked up.
+Bluejay: Yes, yes, don’t tell him a word about this fight, understood? Not a peep. Now, be off with you, kids.
+L: 
+Bluejay: Magpie, you’re coming with me.
+Magpie: No.
+R: Bluejay
+Bluejay: …

@@ -1,0 +1,19 @@
+Location: Detention.png
+# background: concert
+L: Peacock Hawk
+Peacock: So…many…birds. Oof. If a fire started, we’d be trampled!
+Hawk: Yeah, dude, this place is more packed than our sports games.
+L: Finch Hawk
+Finch: Well, duh. PEEP music is, like, so average that everyone likes it.
+R: Sparrow
+Sparrow: Excuse me, did you, like, talk shit on PEEP?
+Finch: Yes.
+Finch: And I’ll say it to their faces! Peep is made of nothing but heartless, money-sucking, two-faced traitors who’d sell out their childhood friend for not fitting into their brand anymore!
+Finch: Their glasses are stupid, and they sing like dying crows!
+Sparrow: OMG, PEEPers, did you hear that?
+R: Sparrow, Sparrow_2
+Sparrow_2: You do not, like, disrespect PEEP and get away with it.
+L: Finch Peacock
+Peacock: Goldfinch, they’re getting real angry. Maybe you could tone it down a bit?
+Finch: Come at me, PEEPers! I’ll fight you all!
+Sparrow: I’ll pluck you up!

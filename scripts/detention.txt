@@ -1,0 +1,39 @@
+Location: Detention.png
+N: It was a wonderful sunny day for our illustrious hero, Red Hawk, who would be spending the afternoon playing sports if not confined in detention.
+L: Hawk(walks)
+Hawk: Ugh! How am I going to make tryouts tomorrow with all this sitting? If only I hadn’t talked to those pigeons for so long. Or at all. 
+N: Hawk and the aforementioned pigeons were in detention after a candy bust gone wrong.
+R: Ground_Dove(slides) Rock_Pigeon(slides)
+Rock_Pigeon: Hey buddy, the deal’s still open.
+Ground_Dove: A little sniff o’ Quick and you’ll outfly a jet.
+Hawk: (Go away!)
+Hawk: (But Quick might help me beat try-outs tomorrow…) Sorry dudes, give me more time to think.
+Rock_Pigeon: That ain’t gonna fly, friend.
+Ground_Dove: Your stutterin’ and flutterin’ cost us hours of hustle. Ya know how much we rake in three hours of hustle?
+Rock_Pigeon: $200. Pay now, pal, and we’ll let it slide to $150.
+Hawk: I don’t have that money! How much Quick can that even buy?
+Rock_Pigeon: Quick’s not included in the deal, buddy.
+Ground_Dove: But if you pay $200, we’ll throw in a little Quick for ya.
+Hawk: (They’re blocking the exit! What’s Teach doing?)
+Secretary Bird: zzzz
+Hawk: (Must…say…no…)
+Finch: Hey losers, can you shut up? I can’t hear my beauty routine over your squawking.
+L: Hawk Finch(rises)
+N: Yellow Goldfinch, our second hero, got detention after practicing her saxophone during yesterday’s detention.
+Rock_Pigeon: Sorry buddy, but we’re just doin’ business.
+Ground_Dove: Unless, ya’d like a little Quick yourself?
+Finch: Leave her alone, she doesn’t want your Quick.
+Finch: Hey Hawk, let’s fight-off these eggheads together.
+Hawk: Thanks, bro!
+Finch: Do. Not. Call me ‘bro’ again.
+Hawk: Sorry.
+Hawk: Hey, guy reading in the corner! Want to also help me say no to candy?
+Swan:…
+L: Hawk Finch Swan(fades)
+N: Our third hero, Black Swan, was in detention after calling the principal a fart.
+Swan: Nah.
+L: Hawk Finch !Swan(fades)
+Hawk: I guess two-on-two’s only fair.
+Finch: Hold on, one of my tail-feathers got messed up. Join you in a bit.
+Rock_Pigeon: Get ready for real good pluckin’, friend.
+Hawk: Wait! Don’t start the fight yet!

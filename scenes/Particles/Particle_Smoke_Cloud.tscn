@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/Particles/Particle_Smoke_Cloud.gd" type="Script" id=1]
+
+[node name="Smoke_Cloud_Particle" type="Sprite"]
+script = ExtResource( 1 )

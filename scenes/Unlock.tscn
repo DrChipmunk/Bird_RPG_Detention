@@ -1,0 +1,90 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://fonts/times.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/Sound_Effect_Player.gd" type="Script" id=2]
+[ext_resource path="res://sprites/peck.png" type="Texture" id=3]
+[ext_resource path="res://sprites/swan_talk.png" type="Texture" id=4]
+[ext_resource path="res://sprites/ground_dove_talk.png" type="Texture" id=5]
+[ext_resource path="res://sprites/Detention.png" type="Texture" id=6]
+[ext_resource path="res://sprites/hawk_talk.png" type="Texture" id=7]
+[ext_resource path="res://sprites/finch_talk.png" type="Texture" id=8]
+[ext_resource path="res://sprites/unlock_card_splash.png" type="Texture" id=9]
+[ext_resource path="res://sprites/card_unlock_title.png" type="Texture" id=10]
+[ext_resource path="res://scenes/Unlock.gd" type="Script" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[node name="Unlock" type="Node2D"]
+pause_mode = 1
+script = ExtResource( 11 )
+
+[node name="Background" type="Sprite" parent="."]
+z_index = -1
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Hawk" type="Sprite" parent="."]
+visible = false
+position = Vector2( 421, 384 )
+scale = Vector2( 0.35, 0.35 )
+z_index = 1
+texture = ExtResource( 7 )
+
+[node name="Finch" type="Sprite" parent="."]
+visible = false
+position = Vector2( 403, 355 )
+scale = Vector2( 0.35, 0.35 )
+z_index = 1
+texture = ExtResource( 8 )
+
+[node name="Peacock" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.231373, 0.890196, 0.796078, 1 )
+position = Vector2( 454, 428 )
+scale = Vector2( 0.35, 0.35 )
+z_index = 1
+texture = ExtResource( 5 )
+
+[node name="Swan" type="Sprite" parent="."]
+visible = false
+position = Vector2( 426, 435 )
+scale = Vector2( 0.35, 0.35 )
+z_index = 1
+texture = ExtResource( 4 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Textbox" type="Sprite" parent="UI"]
+position = Vector2( 0, 400 )
+z_index = 3
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Card" type="Sprite" parent="UI/Textbox"]
+position = Vector2( 400, 100 )
+texture = ExtResource( 3 )
+
+[node name="Card2" type="Sprite" parent="UI/Textbox"]
+visible = false
+
+[node name="Annoucement" type="Sprite" parent="UI"]
+position = Vector2( 400, 50 )
+texture = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="UI/Annoucement"]
+margin_left = -150.0
+margin_top = -10.0
+margin_right = 150.0
+margin_bottom = 10.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "New Card Unlocked!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sound_Effect_Player" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 2 )

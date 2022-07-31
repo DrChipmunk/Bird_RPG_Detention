@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/Sound_Effect_Player.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Attacks/Enemy_Mists.gd" type="Script" id=2]
+
+[node name="Enemy_Mists" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Sound_Effect_Player" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 1 )

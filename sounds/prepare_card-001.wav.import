@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/prepare_card-001.wav-5de808079fd2aa7da94d0057547fe0a4.sample"
+
+[deps]
+
+source_file="res://sounds/prepare_card-001.wav"
+dest_files=[ "res://.import/prepare_card-001.wav-5de808079fd2aa7da94d0057547fe0a4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

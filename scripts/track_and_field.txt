@@ -1,0 +1,36 @@
+Location: Detention.png
+# background: track
+R: Eagle Jocks
+Jocks: Hoo-Haa! Hoo-Haa!
+L: Hawk Finch
+Finch: Ew, watching them is giving me second-hand sweat. I need, like, ten showers.
+Hawk: What’s up dudes?
+Eagle: Dude, where were you? Tryouts are tomorrow! 
+Hawk: Sorry bro, got detention and bone hunting. We gotta use the field now.
+Eagle: Bro, you know how much we need the field. Team’s going places!
+Jocks: Third places! Third places!
+Eagle: Let’s be fair sports here. What about a match for the field, bro? Your team against mine!
+Hawk: Uhh...time out. Group huddle!
+R: Peacock Swan
+Hawk: We can’t beat them. 
+Swan: After Bluejay and Magpie, they’re the opponents you’re afraid of?
+Hawk: They’re buff as T-Rexes, dude!
+Peacock: I hate to say it, but we can’t give up here. Mr. Pheasant might give me a negative salary if the bones are lost.
+Hawk: Surely we can find another clue elsewhere. 
+Swan: You’ll have to face this team anyways if you’re trying out. Think of this as a practice run. 
+Hawk: But what if they think I’m so pathetic that they ban me from tryouts tomorrow?
+Finch: Hawk, have faith in your own power. And if you can’t, can you at least have faith in ours?
+Hawk: ...I’ll do my best. 
+L: Hawk Finch
+R: Eagle Jocks
+Hawk: We’ll take you on! 
+Eagle: Bro, do they even lift?
+L: Hawk Swan
+Swan: …
+L: Hawk Peacock
+Peacock: …
+Hawk: Oh no...we’re going to lose...
+L: Hawk Finch
+Finch: Lifting isn’t everything to fighting, you know? We’ll prove it to you!
+Eagle: Gotta get swole, bro! How else are you gonna get full power?
+Hawk: My team’s...metaphorically ripped, dude. Get ready to get wrecked!

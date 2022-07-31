@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/terrify_particle_down.png" type="Texture" id=1]
+[ext_resource path="res://sprites/terrify_particle_up.png" type="Texture" id=2]
+[ext_resource path="res://scenes/Particles/Particle_Terrify.gd" type="Script" id=3]
+
+[node name="Particle_Terrify" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Upper" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Lower" type="Sprite" parent="."]
+texture = ExtResource( 1 )

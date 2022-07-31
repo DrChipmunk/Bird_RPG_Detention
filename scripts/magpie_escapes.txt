@@ -1,0 +1,18 @@
+Location: Detention.png
+# background: inside museum
+L: Hawk Finch Swan
+R: Magpie
+Magpie: *Sweats * You’ll never catch me alive! *throw’s necklaces at Peacock, knocking him down *
+R: !Magpie
+Hawk: Aw man, she’s escaped.
+R: Pheasant
+Pheasant: But my necklaces are safe. I knew the four of you were right for this job.
+L: Hawk Finch Peacock Swan
+Peacock: Four?
+Pheasant: And while you’re at it, get me the Starbeaks usual.
+L: Peacock
+Peacock: Yes sir.
+R: Pheasant Quail
+Quail: Now, now, Mr. Pheasant, that’s not how you treat our interns.
+Quail: You have to tell him your order. I want a strawberry vanilla chai latte two shots decaf with fat-free almond milk.
+Peacock: …Yes ma’am.
