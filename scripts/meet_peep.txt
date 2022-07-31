@@ -1,4 +1,4 @@
-Location: Detention.png
+Location: talk_bg_concert.png
 # background: concert
 L: Hawk
 R: Sparrow

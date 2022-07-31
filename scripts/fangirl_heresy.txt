@@ -1,4 +1,4 @@
-Location: Detention.png
+Location: talk_bg_concert.png
 # background: concert
 L: Peacock Hawk
 Peacock: So…many…birds. Oof. If a fire started, we’d be trampled!

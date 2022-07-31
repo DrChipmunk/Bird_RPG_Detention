@@ -1,4 +1,4 @@
-Location: Detention.png
+Location: talk_bg_museum_int.png
 # background: inside museum
 L: Hawk Finch Swan
 R: Magpie

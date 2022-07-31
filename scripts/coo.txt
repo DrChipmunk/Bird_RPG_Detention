@@ -1,4 +1,4 @@
-Location: Detention.png
+Location: talk_bg_street.png
 # background: street
 L: Hawk Swan Peacock
 R: Finch

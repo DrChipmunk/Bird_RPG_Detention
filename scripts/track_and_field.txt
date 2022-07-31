@@ -1,4 +1,4 @@
-Location: Detention.png
+Location: talk_bg_track.png
 # background: track
 R: Eagle Jocks
 Jocks: Hoo-Haa! Hoo-Haa!

@@ -1,4 +1,4 @@
-Location: Detention.png
+Location: talk_bg_museum_ext_day.png
 # background: outside museum
 L: Hawk Finch Swan
 Hawk: Woah! I didn’t know we had such a large museum.
