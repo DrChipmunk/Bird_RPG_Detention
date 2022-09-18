@@ -1,4 +1,4 @@
-Setting: talk_bg_bar_ext.png
+Location: talk_bg_bar_ext.png
 L: Hawk Finch Peacock
 R: Swan
 Swan: Here’s their hideout. Be discreet, or else the bouncer will kick you out.
@@ -9,4 +9,17 @@ Swan: I have my ways. Anyways, the other comes with me, through the front, to di
 Swan: But, if one of you were something else to me, he might get less offended.
 Peacock: You want one of us to pretend you’re our boyfriend.
 Swan: I was thinking group project partner, but that works even better. Who’s coming with me?
+Choice: Who should pretend to be Swan's partner?|> Hawk|> Finch|> Peacock
+Code: choose_pairing
+if_choice 0: Hawk: Meeee!!
+if_choice 0: Swan: Okay. Goldfinch, Peacock, go through the back door on the other side. Wait ten minutes while Hawk and I prepare.
+if_choice 0: Goldfinch: You got it.
+if_choice 1: Hawk: Go Goldfinch! 
+if_choice 1: Goldfinch: I guess you’re, like, my boyfriend now. 
+if_choice 1: Swan: Okay. Hawk, Peacock, go through the back door on the other side. Wait ten minutes while Goldfinch and I prepare.
+if_choice 1: Peacock: We’ll do our best!
+if_choice 2: Hawk: Go Peacock!
+if_choice 2: Peacock: Huh?
+if_choice 2: Swan: Okay. Hawk, Goldfinch, go through the back door on the other side. Wait ten minutes while Peacock and I prepare.
+if_choice 2: Hawk: You can count on us!
 # TODO: decision time

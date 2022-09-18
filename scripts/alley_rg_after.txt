@@ -1,0 +1,5 @@
+Location: talk_bg_alley.png
+L: Hawk
+R: Peacock
+Peacock: I hope we didn’t draw any unwanted attention
+Hawk: Who cares, bro? Let’s bust in!

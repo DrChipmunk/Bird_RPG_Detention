@@ -1,0 +1,8 @@
+Location: talk_bg_bar_ext.png
+L: Swan Hawk
+R: Duck
+Duck: Black...I’ve always…loved… *thud *
+R: 
+Swan: Don’t mind him. He’s got strange ideas on how to be a friend. 
+Hawk: I feel you, bro. Some of my friends get like that too. 
+Hawk: Wonder why. 

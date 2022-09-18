@@ -1,0 +1,29 @@
+Location: talk_bg_alley.png
+L: Finch
+R: Peacock
+Finch: ...
+Peacock: (Oh, what do I do? What do I say? This silence is so awkward! I don’t know how to talk about anything other than school.)
+Finch: Peacock?
+Peacock: Yeah? (Come on, she’s your friend. She won’t judge you if you talk about school. But school’s such a boring topic!)
+Finch: What’s school like for you?
+Peacock: School? School’s cool! School’s my favorite subject in school. I’m sorry, I mean, school is a place. That I enjoy. Why do you ask?
+Finch: Out of us four, you seem to be the only one who actually, like, cares about it. What’s so great about school?
+Peacock: Good grades lead to good universities, which will hopefully lead to better work than my stupid unpaid internship. I just want financial freedom. 
+Finch: Wow, I thought you were going to say something lame like, ‘I love reading!’
+Finch: You’re right though. I’ve been trying to find what I can do since I left PEEP last year. I did try, but school just doesn’t like me.
+Peacock: Surely there’s not no subject you do well. 
+Finch: I’m good at looking pretty and singing, not being smart.
+Peacock: Goldfinch, you’re already smarter than half of my coworkers.. Maybe you just forgot how to study after being with PEEP for so long. I’ll teach you until we find what you like!
+Finch: Thanks, sweetie. I’ll give it a try 
+L: Finch Peacock
+R: Goose
+Goose: What the-shoo! If you keep snooping I’ll start shooting!
+Peacock: Please don’t shoot! We’re just talking about...school.
+Goose: Like I’d fall for that. You’ve poked your beak in our nest too many times.
+Finch: Like, do I know you?
+Peacock: He joined Bluejay to protect Magpie. That means he must want to stop us from getting the bones! 
+Finch: Oh my gosh, you’re right!
+Goose: *Sweats * That was another goose. 
+Peacock:  Another goose with the exact same hat?
+Finch: Give back the bones and we’ll go easy.
+Goose: Don’t get cocky, kids. You got it easy around Bluejay, but I’m not showing any mercy now!

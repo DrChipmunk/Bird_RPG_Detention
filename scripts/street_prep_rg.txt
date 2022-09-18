@@ -1,0 +1,18 @@
+Location: talk_bg_street.png
+L: Swan
+R: Finch
+Swan:...And that’s the story, got it?
+Finch: Sure, sweetie. Anything else you wanna make up about yourself?
+Swan: I don’t know or care for what you’re insinuating. 
+Finch: Oh come on. I’m not, like, that stupid. I’m talking about your family. 
+Swan: If you’re having second thoughts about the plan, don’t come. 
+Finch: We still need the bones, I guess. But you should’ve told everyone before we decided to break into your house!
+Swan: Your history with PEEP would’ve been nice to know too, before you decided we needed to crash their concert.
+Finch: It’s private! Besides, I didn’t know if you’d still want to be my friend after finding out.
+Finch: Oh, I see. 
+Swan: No, it’s unfair to compare our backgrounds. I’m sorry for turning the argument on you. 
+Finch: I can still, like, kinda understand. And I shouldn’t be saying this, but no second thoughts about the plan. I know you’re not a bad guy.
+Swan: Thanks. I promise I’ll tell everyone after the heist is over, if it hasn’t blown up.
+Finch: You’re not afraid they’ll leave?
+Swan: They deserve to make that call with the truth. 
+Swan: We’ve kept them waiting for long enough. Let’s go. 

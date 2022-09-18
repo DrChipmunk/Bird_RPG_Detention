@@ -1,0 +1,31 @@
+Location: talk_bg_alley.png
+L: Hawk
+R: Peacock
+Hawk: *Pacing about* Those dinosaur bones are so close, I can smell the bananas!
+Peacock: In my limited work esperience, dinosaur bones don’t smell anything like bananas?
+Hawk: It’s the $100 reward! That’s $20 for the four of us!
+Hawk: *vibrating* I can’t even count how many bananas I could buy. 
+Peacock: It would be $25 per person. But Mr. Pheasant isn’t counting me in the reward, so you have about $33. 
+Hawk: Nice, more bananas for me! Do you get a pay raise instead?
+Peacock: I don’t...get paid. 
+Hawk: Is work so fun you don’t want to get paid?
+Peacock: The opportunity to be part of the museum is my reward. I get experience, and it looks good on my resume. Mr. Pheasant says he’ll even write me a reference letter if I keep quiet. 
+Peacock: Besides, all I do is odd jobs, like organizing files or cleaning toilets. Anyone could take over my job, so I shouldn’t stir the pot.  
+Hawk: Are you a mouse or a peacock? Ask for money! Ask to do cooler things! You’re too smart to be their benchwarmer.
+Peacock: I’m good at school, but it clearly didn’t mean anything to my coworkers.
+Hawk: Bro, school is tough. And you’ve been working so hard to get the bones back. If Mr. Pheasant still doesn’t reward you, I’m going to lecture him for the whole night!  
+Peacock: ...You’re right. This whole fossil chase is obviously way above what I’m supposed to do. I’m going to ask for compensation, and if that gets me fired...I don’t even care honestly. 
+Hawk: Don’t worry bro, if you get fired, I’ll give you a fair share of bananas. 
+Peacock: I’d rather have money please.
+L: Hawk Peacock
+R: Goose
+Goose: What the-shoo! If you keep snooping I’ll start shooting. 
+Hawk: Dude, we’re just talking about bananas here. 
+Goose: Like I’d fall for that. You’ve poked your beak in our nest too many times.
+Hawk: Sorry dude, never seen you before. 
+Peacock: He joined Bluejay to protect Magpie. That means he doesn’t want us to get the fossils. 
+Hawk: Really? He looks totally different from that other goose! 
+Goose: *Sweats * Yes! No dinosaur bones here.
+Peacock:  No other goose has a hat like yours. 
+Hawk: If you say that’s the goose, he’s the goose! We're getting the bones back!
+Goose: Don’t get cocky, kids. You got it easy around Bluejay, but I’m not showing any mercy now!

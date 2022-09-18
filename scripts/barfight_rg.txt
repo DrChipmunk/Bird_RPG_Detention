@@ -1,0 +1,25 @@
+Location: talk_bg_bar_int.png
+L: Swan Finch
+Swan: We’re in. Before anyone gets alerted-
+???: Who’s making all that ruckus?
+Swan: …Hi mom. I’m home.
+R: White_Swan
+Hawk: Hmph
+White_Swan: Welcome home, Black. Not too late for dinner for once. And you brought a friend. For once.
+Swan: Is that a problem?
+White_Swan: Of course not, I’m happy for you. Why don’t you and your friend sit down while I get some refresh-
+L: Swan Finch Hawk
+Hawk: We got in!
+L: Swan Hawk Peacock
+Peacock: shutupshutupshutup
+R: White_Swan Goose
+Goose: Ma’am, these intruders ambushed me in the back alley!
+R: White_Swan Duck
+Duck: Black and his…*sniff* girlfriend beat me up!
+Swan: Mom, I can explain. 
+White_Swan: …I see how it is. It must be karma, that what I did to my mother, my son shall do to me. 
+L: Swan Peacock Finch
+Finch: Um, what the heck?
+White_Swan: No matter how much love you shower children, they’ll always grow up to have the same ambition. I’m disappointed, Black.
+Swan: I swear this is all just a big misunder-
+White_Swan: If you think that pitiful ambush is enough to take over the family business, you’re hopeless. Let me show you what real power is. 

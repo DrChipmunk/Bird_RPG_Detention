@@ -71,6 +71,8 @@ func load_scene(scene):
 		if active_screen:
 			active_screen.queue_free()
 		var talk = preload("res://scenes/Talk.tscn").instance()
+		if "##" in scene["name"]:
+			scene["name"] = scene["name"].replace("##", choices["pairing"])
 		talk.load_script(scene["name"])
 		add_child(talk)
 		active_screen = talk
@@ -233,7 +235,7 @@ func load_script():
 			"prev": i - 1,
 		}
 		scene_list.append(scene)
-	curr_scene = scene_list[0]
+	curr_scene = scene_list[31]
 #TODO
 # talk mode
 #  emotes

@@ -1,0 +1,5 @@
+Location: talk_bg_alley.png
+L: Finch
+R: Peacock
+Peacock: Phew, I hope we didn’t draw any attention. 
+Goldfinch: I wonder how Hawk and Swan are doing.
