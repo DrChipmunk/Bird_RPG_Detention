@@ -72,6 +72,8 @@ func execute_line():
 			if not "!" in bird:
 				left_birds.append(bird)
 			bird = bird.replace("!", "")
+			if len(bird) < 1:
+				continue
 			if not bird in birds:
 				var b = preload("res://scenes/Talk_Bird.tscn").instance()
 				b.set_bird(bird)
@@ -93,6 +95,8 @@ func execute_line():
 			if not "!" in bird:
 				right_birds.append(bird)
 			bird = bird.replace("!", "")
+			if len(bird) < 1:
+				continue
 			if not bird in birds:
 				var b = preload("res://scenes/Talk_Bird.tscn").instance()
 				b.set_bird(bird)
