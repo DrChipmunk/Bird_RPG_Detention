@@ -495,9 +495,25 @@ func set_default_locations():
 		enemy_plate.position = Vector2(0, 0)
 	if state == STATE_SELECT_BIRB or state == STATE_SELECT_TARGET:
 		hand[selected_card].position += Vector2(0, -50)
+	if state == STATE_SELECT_BIRB:
+		for i in range(4):
+			if card_can_be_played(hand[selected_card], i):
+				birbs[i].position += Vector2(10, 0)
+				birb_plates[i].position += Vector2(10, 0)
 	if state == STATE_SELECT_TARGET:
 		birbs[selected_birb].position += Vector2(50, 0)
 		birb_plates[selected_birb].position += Vector2(50, 0)
+		if hand[selected_card].target_type == "birb":
+			for i in range(4):
+				if birbs[i].hp > 0 and i != selected_birb:
+					birbs[i].position += Vector2(10, 0)
+					birb_plates[i].position += Vector2(10, 0)				
+		elif hand[selected_card].target_type == "enemy":
+			for i in range(4):
+				if enemies[i].hp > 0:
+					enemies[i].position += Vector2(-10, 0)
+					enemy_plates[i].position += Vector2(-10, 0)				
+			
 
 func start_victory_defeat():
 	var birbs_alive = false
@@ -712,23 +728,26 @@ func rewind_tutorial_if_failed():
 func card_tray_active():
 	return curr_animation == null and state in [STATE_CHOICE, STATE_SELECT_BIRB, STATE_SELECT_TARGET]
 
+var autoselect_when_no_choice = false
+
 func autoselect_no_choice():
-	if state == STATE_SELECT_BIRB:
-		var c = hand[selected_card]
-		var usable = []
-		for i in range(4):
-			if card_can_be_played(c, i):
-				usable.append(i)
-		if len(usable) == 0:
-			state = STATE_CHOICE
-		if len(usable) == 1:
-			selected_birb = usable[0]
-			state = STATE_SELECT_TARGET
-	if state == STATE_SELECT_TARGET:
-		var c = hand[selected_card]
-		if c.target_type == "none" and not curr_animation:
-			play_card(0)
-			state = STATE_CHOICE	
+	if autoselect_when_no_choice:
+		if state == STATE_SELECT_BIRB:
+			var c = hand[selected_card]
+			var usable = []
+			for i in range(4):
+				if card_can_be_played(c, i):
+					usable.append(i)
+			if len(usable) == 0:
+				state = STATE_CHOICE
+			if len(usable) == 1:
+				selected_birb = usable[0]
+				state = STATE_SELECT_TARGET
+		if state == STATE_SELECT_TARGET:
+			var c = hand[selected_card]
+			if c.target_type == "none" and not curr_animation:
+				play_card(0)
+				state = STATE_CHOICE	
 	
 func idle_animation(delta):
 	idle_timer += delta
@@ -962,6 +981,10 @@ func _input(event):
 					if hand[i] and selected_card != i:
 						selected_card = i
 						sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
+					elif hand[i] and selected_card == i:
+						selected_card = -1
+						state = STATE_CHOICE
+						sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
 				elif y < 360 and x < 300:
 					var i = int(y / 90)
 					if card_can_be_played(hand[selected_card], i):
@@ -972,7 +995,11 @@ func _input(event):
 					state = STATE_CHOICE
 					sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
 			elif state == STATE_SELECT_TARGET:
-				if y < 360 and x > 485 and hand[selected_card].target_type == "enemy":
+				if y < 360 and x < 300 and selected_birb == int(y / 90):
+					selected_birb = -1
+					state = STATE_SELECT_BIRB
+					sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
+				elif y < 360 and x > 485 and hand[selected_card].target_type == "enemy":
 					var i = int(y / 90)
 					if enemies[i].hp > 0 and not curr_animation:
 						play_card(i)
@@ -995,9 +1022,17 @@ func _input(event):
 						state = STATE_SELECT_BIRB
 						selected_card = i
 						sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
+					elif hand[i] and selected_card == i:
+						state = STATE_CHOICE
+						selected_card = -1
+						selected_birb = -1
+						sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
 				elif y > 550 and x > 700:
 					state = STATE_CHOICE
 					sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
+				else:
+					play_card(0)
+					state = STATE_CHOICE
 		
 var screen_shake_active = false
 var screen_shake_elapsed = 0

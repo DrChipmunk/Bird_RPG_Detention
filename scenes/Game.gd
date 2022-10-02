@@ -235,18 +235,15 @@ func load_script():
 			"prev": i - 1,
 		}
 		scene_list.append(scene)
-	curr_scene = scene_list[31]
+	curr_scene = scene_list[0]
 #TODO
 # talk mode
 #  emotes
 #  background changes
 #  more animations
 #  load in scripts
-#  choices
 # fight mode
-#  allow undoing actions
 #  responses for invalid input
-#  highlighting of choices
 # unlock mode
 #  background per unlock
 # menus
