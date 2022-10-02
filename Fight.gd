@@ -991,6 +991,24 @@ func _input(event):
 						state = STATE_SELECT_TARGET
 						selected_birb = i
 						sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
+					elif birbs[i].hp > 0 and birbs[i].actions > 0:
+						if i == 0:
+							birb_battle_dialogue(0, "Don't know how to do that")
+						elif i == 1:
+							birb_battle_dialogue(1, "That's not my style")
+						elif i == 2:
+							birb_battle_dialogue(2, "Haven't been trained for that, sorry")
+						elif i == 3:
+							birb_battle_dialogue(3, "I don't do that kind of thing")
+					elif birbs[i].hp > 0:
+						if i == 0:
+							birb_battle_dialogue(0, "Need to take a breather first")
+						elif i == 1:
+							birb_battle_dialogue(1, "All outta gas, sorry")
+						elif i == 2:
+							birb_battle_dialogue(2, "I have no more action points")
+						elif i == 3:
+							birb_battle_dialogue(3, "I'm done for this turn")						
 				elif y > 550 and x > 700:
 					state = STATE_CHOICE
 					sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
@@ -1016,6 +1034,24 @@ func _input(event):
 					if card_can_be_played(hand[selected_card], i):
 						selected_birb = i
 						sound_effect_player.load_and_play(preload("res://sounds/click_neutral-001.wav"))
+					elif birbs[i].hp > 0 and birbs[i].actions > 0:
+						if i == 0:
+							birb_battle_dialogue(0, "Don't know how to do that")
+						elif i == 1:
+							birb_battle_dialogue(1, "That's not my style")
+						elif i == 2:
+							birb_battle_dialogue(2, "Haven't been trained for that, sorry")
+						elif i == 3:
+							birb_battle_dialogue(3, "I don't do that kind of thing")
+					elif birbs[i].hp > 0:
+						if i == 0:
+							birb_battle_dialogue(0, "Need to take a breather first")
+						elif i == 1:
+							birb_battle_dialogue(1, "All outta gas, sorry")
+						elif i == 2:
+							birb_battle_dialogue(2, "I have no more action points")
+						elif i == 3:
+							birb_battle_dialogue(3, "I'm done for this turn")
 				elif y > 400 and x < 700:
 					var i = int(x / 100)
 					if hand[i] and selected_card != i:

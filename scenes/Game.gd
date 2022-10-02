@@ -242,8 +242,6 @@ func load_script():
 #  background changes
 #  more animations
 #  load in scripts
-# fight mode
-#  responses for invalid input
 # unlock mode
 #  background per unlock
 # menus
